@@ -29,7 +29,7 @@ pagan = {
 		heretic = { NORSE }
 	}	
 }
-zoroastrian_group = {
+dualism = {
 	mandaean = {
 		icon = 19
 		color = { 0.5 0.7 0.2 }

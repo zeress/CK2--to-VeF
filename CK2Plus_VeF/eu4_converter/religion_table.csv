@@ -20,7 +20,7 @@ slavic_pagan_reformed;slavicanism;0;Reformed Slavic
 west_african_pagan;animism;0;West African
 west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
 hellenic_pagan;hellenic;0;Hellenic
-zun_pagan;zoroastrian;0;Zunist
+zun_pagan;zoroastrianism;0;Zunist
 zun_pagan_reformed;zun_pagan_reformed;1;Zunist
 berber_pagan;berber_pagan;1;Tamazight
 jewish_pagan;jewish_pagan;1;Canaanite
@@ -28,11 +28,11 @@ arab_pagan;animism;0;Generic Pagan
 
 # Zoroastrianism
 
-zoroastrian;zoroastrian;1;Zoroastrian
-mazdaki;zoroastrian;1;Zoroastrian
+zoroastrian;zoroastrianism;0;Zoroastrian
+mazdaki;zoroastrianism;0;Zoroastrian
 manichean;manichean;1;Manichean
 mandaean;mandaean;1;Mandaean
-zurvanist;zoroastrian;1;Zoroastrian
+zurvanist;zoroastrianism;0;Zoroastrian
 
 # Christianity
 
