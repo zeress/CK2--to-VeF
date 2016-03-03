@@ -10,6 +10,7 @@ pagan = {
 }
 dualism = {
 	zurvanist = {
+		icon = 20
 		color = { 0.3 0.65 0.25 }
 		province = {
 			local_missionary_strength = -0.01
