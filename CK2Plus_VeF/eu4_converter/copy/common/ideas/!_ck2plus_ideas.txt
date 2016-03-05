@@ -10,7 +10,7 @@ SEN_ideas = {
 	
 	trigger = {
 		OR = {
-			capital_scope = { region = british_isles }
+			capital_scope = { region = british_isles_region }
 			tag = ENG
 		}
 		primary_culture = anglosaxon
@@ -55,7 +55,7 @@ NEN_ideas = {
 	
 	trigger = {
 		OR = {
-			capital_scope = { region = british_isles }
+			capital_scope = { region = british_isles_region }
 			tag = ENG
 		}
 		primary_culture = norwegian
@@ -109,7 +109,7 @@ Generic_RUS_ideas = {
 				NOT = { tag = KIE }
 			}
 			AND = {
-				capital_scope = { region = russian_region }
+				capital_scope = { region = russia_region }
 				NOT = {
 					primary_culture = ilmenian
 					primary_culture = volhynian
@@ -718,7 +718,7 @@ norse_ideas = {
 		land_forcelimit_modifier = 0.20
 	}
 	norse_ideas_2 = { # Efficient Trade
-		global_trade_income_modifier = 0.10
+		global_trade_power = 0.10
 	}
 	norse_ideas_3 = { # Norse Ingenuity
 		production_efficiency = 0.1
