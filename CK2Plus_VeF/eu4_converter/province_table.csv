@@ -108,7 +108,8 @@ c_almeria;101;101 - Almeria;
 #Aragon
 c_alto_aragon;113;113 - Jaca;
 c_alto_aragon;112;112 - Huesca;
-c_barcelona;110;110 - Manresa;
+c_urgell;110;110 - Manresa;
+c_urgell;111;111 - Andorra;
 c_empuries;109;109 - Girona;
 c_calatayud;105;105 - Calatyud;
 c_zaragoza;106;106 - Zaragoza;
