@@ -67,3 +67,66 @@ c_inverness;10;10 - Inverness;
 c_caithness;8;8 - Wick;
 c_innse_gall;9;9 - Western Isles;
 c_orkney;7;7 - Orkney;
+
+### Europe
+## Iberia
+#Castille
+c_coruna;71;71 - A Coruna;
+c_coruna;72;72 - Lugo;
+c_santiago;70;70 - Santiago;
+c_asturias_de_oviedo;73;73 - Asturias;
+c_asturias_de_santillana;74;74 - Cantabria;
+c_viscaya;75;75 - Viscaya;
+c_navarra;114;114 - Nafarroa;
+c_leon;79;79 - Leon;
+c_palencia;78;78 - Palencia;
+c_burgos;77;77 - Burgos;
+c_najera;76;76 - Logrono;
+c_zamora;80;80 - Zamora;
+c_valladolid;82;82 - Castilla La Vieja;
+c_soria;83;83 - Soria;
+c_salamanca;81;81 - Salamanca;
+c_caceres;86;86 - Caceres;
+c_toledo;85;85 - Madrid;
+c_cuenca;84;84 - Cuenca;
+c_toledo;87;87 - Toledo;
+c_almansa;88;88 - Albacete;
+c_badajoz;94;94 - Badajoz;
+c_badajoz;93;93 - Merida;
+c_calatrava;90;90 - Puertoplano;
+c_cordoba;92;92 - Cordoba;
+c_jaen;91;91 - Jaen;
+c_murcia;89;89 - Murcia;
+c_niebla;95;95 - Huelva;
+c_sevilla;96;96 - Sevilla;
+c_cadiz;97;97 - Cadiz;
+c_algeciras;98;98 - Gibraltar;
+c_malaga;99;99 - Malaga;
+c_granada;100;100 - Granada;
+c_almeria;101;101 - Almeria;
+
+#Aragon
+c_alto_aragon;113;113 - Jaca;
+c_alto_aragon;112;112 - Huesca;
+c_barcelona;110;110 - Manresa;
+c_empuries;109;109 - Girona;
+c_calatayud;105;105 - Calatyud;
+c_zaragoza;106;106 - Zaragoza;
+c_barcelona;107;107 - Barcelona;
+c_albarracin;104;104 - Teruel;
+c_valencia;103;103 - Valencia;
+c_denia;102;102 - Alicant;
+c_mallorca;108;108 - Baleares;
+
+#Portugal
+c_porto;69;69 - Braga;
+c_porto;67;67 - Porto;
+c_braganza;68;68 - Braganza;
+c_coimbra;66;66 - Beira Alta;
+c_coimbra;64;64 - Coimbra;
+c_castelo_branco;65;65 - Beira Baixa;
+c_lisboa;63;63- Lisboa;
+c_lisboa;62;62 - Ribatejo;
+c_evora;61;61 - Alto Alentejo;
+c_mertola;60;60 - Baixo Altentejo;
+c_faro;59;59 - Algarve;
