@@ -1,6 +1,17 @@
 # CK2TITLE;EU4ID;Filename;Comment
 
-#Ireland
+### Atlantic Ocean
+# Iceland
+c_vestisland;3;3 - Reykjavik;
+c_austisland;4;4 - Akureyri;
+
+# Orkney Isles
+c_faereyar;5;5 - Faroes;
+c_shetland;6;6 - Shetland;
+
+## British Isles
+
+# Ireland
 c_desmond;49;49 - Corcaigh;
 c_thomond;50;50 - Luimneach;
 c_leinster;48;48 - Loch Garman;
@@ -11,3 +22,48 @@ c_dublin;46;46 - Meath;
 c_tyrconnell;53;53 - Tir Chonaill;
 c_tyrone;54;54 - Daire;
 c_ulster;55;55 - Ulaidh;
+
+# England
+c_cornwall;41;41 - Cornwall;
+c_devon;40;40 - Devon;
+c_winchester;38;38 - Hampshire;
+c_somerset;39;39 - Somerset;
+c_kent;36;36 - Kent;
+c_sussex;37;37 - Sussex;
+c_middlesex;34;34 - Middlesex;
+c_wiltshire;35;35 - Salisbury;
+c_gloucester;29;29 - Gloucester;
+c_oxford;30;30 - Oxford;
+c_bedford;31;31 - Bedford;
+c_essex;33;33 - Essex;
+c_norfolk;32;32 - Norfolk;
+c_hereford;28;28 - Hereford;
+c_leicester;27;27 - Leicester;
+c_lincoln;26;26 - Lincoln;
+c_derby;25;25 - Derby;
+c_chester;24;24 - Chester;
+c_lancaster;23;23 - Lancaster;
+c_york;22;22 - York;
+c_durham;21;21 - Durham;
+c_cumberland;19;19 - Cumberland;
+c_northumberland;20;20 - Northumberland;
+
+# Wales
+c_glamorgan;42;42 - Glamorgan;
+c_dyfed;43;43 - Deheubarth;
+c_powys_fadog;44;44 - Powys;
+c_gwynedd;45;45 - Gwynedd;
+
+# Scotland
+c_isle_of_man;18;18 - Isle of Man;
+c_galloway;17;17 - Ayrshire;
+c_dunbar;16;16 - Mairches;
+c_clydesdale;14;14 - Glasgow;
+c_lothian;15;15 - Lothain;
+c_gowrie;13;13 - Perthshire;
+c_argyll;11;11 - Argyll;
+c_buchan;12;12 - Aberdeen;
+c_inverness;10;10 - Inverness;
+c_caithness;8;8 - Wick;
+c_innse_gall;9;9 - Western Isles;
+c_orkney;7;7 - Orkney;
