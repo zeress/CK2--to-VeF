@@ -70,7 +70,7 @@ c_orkney;7;7 - Orkney;
 
 ### Europe
 ## Iberia
-#Castille
+# Castille
 c_coruna;71;71 - A Coruna;
 c_coruna;72;72 - Lugo;
 c_santiago;70;70 - Santiago;
@@ -105,7 +105,7 @@ c_malaga;99;99 - Malaga;
 c_granada;100;100 - Granada;
 c_almeria;101;101 - Almeria;
 
-#Aragon
+# Aragon
 c_alto_aragon;113;113 - Jaca;
 c_alto_aragon;112;112 - Huesca;
 c_urgell;110;110 - Manresa;
@@ -119,7 +119,7 @@ c_valencia;103;103 - Valencia;
 c_denia;102;102 - Alicant;
 c_mallorca;108;108 - Baleares;
 
-#Portugal
+# Portugal
 c_porto;69;69 - Braga;
 c_porto;67;67 - Porto;
 c_braganza;68;68 - Braganza;
@@ -131,3 +131,68 @@ c_lisboa;62;62 - Ribatejo;
 c_evora;61;61 - Alto Alentejo;
 c_mertola;60;60 - Baixo Altentejo;
 c_faro;59;59 - Algarve;
+
+# France
+c_labourd;115;115 - Labourd;
+c_bearn;118;118 - Bearn;
+c_bigorre;119;119 - Tarbes;
+c_carcassonne;120;120 - Carcassonne;
+c_rosello;121;121 - Rosello;
+c_armagnac;124;124 - Armagnac;
+c_toulouse;123;123 - Toulouse;
+c_narbonne;122;122 - Narbonne;
+c_bordeaux;117;117 - Gascogne;
+c_albret;116;116 - Albret;
+c_perigord;125;125 - Perigord;
+c_rouergue;126;126 - Rouergue;
+c_rouergue;127;127 - Milhau;
+c_montpellier;128;128 - Montpeller;
+c_dauphine_viennois;129;129 - Valence;
+c_provence;130;130 - Marseille;
+c_provence;133;133 - Provence;
+c_provence;131;131 - Toulon;
+c_nice;132;132 - Nice;
+c_forcalquier;134;134 - Gap;
+c_dauphine_viennois;136;136 - Dauphine;
+c_poitiers;144;144 - Poitou;
+c_aunis;145;145 - La Rochelle;
+c_limousin;143;143 - Limousin;
+c_auvergne;142;142 - Auvergne;
+c_forez;141;141 - Forez;
+c_lyon;140;140 - Lyonnais;
+c_bourbon;146;146 - Bourbon;
+c_bourbon;147;147 - Riom;
+c_bourbon;148;148 - Montpensier;
+c_nantes;159;159 - Nantes;
+c_anjou;155;155 - Anjou;
+c_tourraine;155;155 - Touraine;
+c_orleans;154;154 - Orleans;
+c_bourges;153;153 - Berry;
+c_nevers;152;152 - Nivernais;
+c_charolais;149;149 - Charolais;
+c_dijon;151;151 - Bourgogne;
+c_besancon;150;150 - Franche-Comte;
+c_vannes;160;160 - Vannetais;
+c_rennes;164;164 - Armor;
+c_maine;157;157 - Maine;
+c_vendome;168;168 - Vendome;
+c_chartres;169;169 - Chartres;
+c_alencon;158;158 - Alencon;
+c_nemours;171;171 - Nemours;
+c_troyes;172;172 - Troyes;
+c_troyes;173;173 - Chaumont;
+c_ile_de_france;170;170 - Paris;
+c_reims;175;175 - Reims;
+c_french_leon;162;162 - Brest;
+c_cornouaille;161;161 - Quimper;
+c_tregor;163;163 - Tregor;
+c_avranches;165;165 - Cherbourg;
+c_bayeux;166;166 - Caen;
+c_arques;167;167 - Caux;
+c_vermandois;174;174 - Vermandois;
+c_vermandois;198;198 - Cambray;
+c_vermandois;199;199 - Rethel;
+c_amiens;176;176 - Picardie;
+c_artois;196;196 - Arras;
+c_guines;177;177 - Calais;
+c_hainaut;197;197 - Hainaut;
