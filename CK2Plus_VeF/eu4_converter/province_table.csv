@@ -413,3 +413,72 @@ c_logudoro;206;206 - Sassari;
 c_logudoro;205;205 - Gallura;
 c_arborea;207;207 - Oristano;
 c_cagliari;208;208 - Cagliari;
+
+# Denmark
+c_slesvig;383;383 - Slesvig;
+c_slesvig;384;384 - Nordslevig;
+c_jylland;385;385 - Midtjylland;
+c_jylland;386;386 - Nordjylland;
+c_jylland;387;387 - Vendsyssel;
+c_fyn;388;388 - Fyn;
+c_lolland;389;389 - Lolland;
+c_sjaelland;390;390 - Sjaelland;
+
+## Fennoscandia
+# Sweden
+c_skane;392;392 - Skane;
+c_smaland;395;395 - Smaland;
+c_blekinge;394;394 - Blekinge;
+c_bornholm;391;391 - Bornholm;
+c_oland;396;396 -  Oland;
+c_halland;393;393 - Halland;
+c_gotland;397;397 - Gotland;
+c_ostergotland;398;398 - Ostergotland;
+c_vastergotland;399;399 - Vastergotland;
+c_viken;400;400 - Bohuslan;
+c_varmland;401;401 - Varmland;
+c_narke;402;402 - Narke;
+c_sodermanland;403;403 - Sodermanland;
+c_uppland;404;404 - Uppland;
+c_aland;416;416 - Aland;
+c_halsingland;408;408 - Halsingland;
+c_dalarna;406;406 - Dalarana;
+c_dalarna;405;405 - Bergslagen;
+c_dalarna;407;407 - Falun;
+c_medelpad;409;409 - Medelpad;
+c_angermanland;411;411 - Angermanland;
+c_vasterbotten;413;413 - Vasterbotten;
+c_vasterbotten;415;415 - Norbotten;
+c_lappland;412;412 - Ume Lappmark;
+c_lappland;414;414 - Lule Lappmark;
+
+# Norway
+c_jamtland;410;410 - Jemtland;
+c_viken;417;417 - Viken;
+c_vestfold;418;418 - Vestfold;
+c_agder;419;419 - Agder;
+c_bergenshus;420;420 - Vestlandet;
+c_oppland;421;421 - Opplandene;
+c_hedmark;422;422 - Hedmark;
+c_trondelag;423;423 - Trondelag;
+c_halogaland;424;424 - Halogaland;
+c_finnmark;425;425 - Finnmarku;
+
+# Finland, Kola Peninsula, Karelia
+c_kemi;426;426 - Roavenjarga;
+c_kemi;427;427 - Lansipohja;
+c_kola;704;704 - Kola;
+c_kandalax;703;703 - Vienan Karjala;
+c_osterbotten;428;428 - Kainuu;
+c_osterbotten;438;438 - Osterbotten;
+c_satakunta;435;435 - Satakunda;
+c_satakunta;436;436 - Pirkanmaa;
+c_finland;434;434 - Finland;
+c_nyland;433;433 - Uusimaa;
+c_savolaks;437;437 - Savo;
+c_kexholm;429;429 - Pohjois-Karjala;
+c_kexholm;430;430 - Kakilsami;
+c_kexholm;431;431 - Vyborg;
+c_kexholm;432;432 - Kymmenedalen;
+c_onega;702;702 - Olonets;
+
