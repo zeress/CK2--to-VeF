@@ -79,7 +79,7 @@ hindu;hinduism;0;Hindu
 jain;jain;1;Jain
 
 # CK2Plus Religions
-celtic_pagan;shamanism;0;Celtic
+celtic_pagan;celtic_pagan_reformed;1;Tuatha
 celtic_pagan_reformed;celtic_pagan_reformed;1;Tuatha
 egyptian_pagan;egyptian_pagan;1;Kemetic
 aten_pagan;egyptian_pagan;1;Atenism
