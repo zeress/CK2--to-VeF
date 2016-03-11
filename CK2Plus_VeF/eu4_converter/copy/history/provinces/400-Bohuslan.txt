@@ -1,0 +1,21 @@
+# Bohuslän
+# Manpower revision complete
+#Province IDs changed
+
+owner = SWE
+controller = SWE
+add_core = NOR
+add_core = SWE #1305
+culture = norwegian
+religion = catholic
+hre = no
+base_tax = 1 base_production = 1
+trade_goods = fish
+base_manpower = 0.5
+is_city = yes
+capital = "Kungahälla"
+citysize = 1000 
+discovered_by = eastern
+discovered_by = scandinavian_tech
+discovered_by = western
+discovered_by = byzantine
