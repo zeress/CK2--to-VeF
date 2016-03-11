@@ -542,14 +542,18 @@ c_feher;511;511 - Alba;
 c_szekelyfold;507;507 - Szaszfold;
 c_szekelyfold;508;508 - Szekelyfold;
 
-# Croatia, Bosnia, Slavonia
+## Balkan States
+# Croatia, Bosnia, Slavonia, Serbia
 c_varadzin;544;544 - Varasd;
 c_krizevci;545;545 - Szlavonia;
 c_zagreb;533;533 - Zagreb;
 c_zagreb;534;534 - Sisak;
 c_usora;540;540 - Donji Kraji;
+c_belgrade;546;546 - Beograd;
 c_belgrade;543;543 - Soli;
 c_belgrade;542;542 - Bosna;
+c_belgrade;547;547 - Valjevo;
+c_belgrade;548;548 - Branicevo;
 c_hum;539;539 - Hum;
 c_travonia;541;541 - Travunia;
 c_istria;532;532 - Lika;
@@ -557,3 +561,50 @@ c_zadar;535;535 - Dalmazia;
 c_split;536;536 - Split;
 c_ragusa;537;537 - Ragusa;
 c_rama;538;538 - Rama;
+c_zeta;551;551 - Zeta;
+c_zeta;552;552 - Kotor;
+c_zeta;568;568 - Drac;
+c_rashka;550;550 - Raska;
+c_rashka;553;553 - Kosovo;
+
+# Bulgaria
+c_naissus;549;549 - Nis;
+c_naissus;554;554 - Skoplje;
+c_vidin;556;556 - Vidin;
+c_severin;506;506 - Oltenia;
+c_serdica;555;555 - Sofia;
+c_tirgoviste;505;505 - Arges;
+c_tyrnovo;557;557 - Tarnovo;
+c_tyrnovo;563;563 - Sliven;
+c_mesembria;562;562 - Burgas;
+c_mesembria;561;561 - Varna;
+c_karvuna;558;558 - Silistria;
+c_karvuna;560;560 - Caliacra;
+c_constantia;559;559 - Dobrogea;
+c_belgorod;500;500 - Chilia Veche;
+
+# Greece
+c_dyrrachion;569;569 - Albania;
+c_strymon;567;567 - Pelagonia;
+c_strymon;566;566 - Vardar;
+c_chalkidike;565;565 - Melnik;
+c_philippopolis;564;564 - Philippopolis;
+c_philippopolis;585;585 - Komotini;
+c_thrake;587;587 - Thrace;
+c_epeiros;570;570 - Argyrokastro;
+c_ochrid;582;582 - Kastoria;
+c_thessalonike;583;583 - Macedonia;
+c_chalkidike;584;584 - Serres;
+c_kaliopolis;586;586 - Gallipoli;
+c_kyzikos;589;589 - Limnos;
+c_epeiros;571;571 - Epirus;
+c_ochrid;582;582 - Kastoria;
+c_thessalia;581;581 - Thessaly;
+c_arta;573;573 - Aetolia;
+c_euboia;580;580 - Negroponte;
+c_atheniai;579;579 - Attica;
+c_achaia;574;574 - Acaia;
+c_methone;575;575 - Messenia;
+c_monemvasia;576;576 - Laconia;
+c_naxos;578;578 - Naxos;
+c_chandax;577;577 - Creta;
