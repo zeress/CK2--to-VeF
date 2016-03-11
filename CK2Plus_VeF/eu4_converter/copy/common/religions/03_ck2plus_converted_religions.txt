@@ -21,7 +21,7 @@ pagan = {
 	
 	german_pagan_reformed = {
 		color = {0.2 0.5 0.5}
-		icon = 42
+		icon = 46
 		country = {
 			land_morale = 0.2
 			discipline = 0.15
