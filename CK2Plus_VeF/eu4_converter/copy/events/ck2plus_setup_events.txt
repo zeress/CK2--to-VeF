@@ -1,0 +1,21 @@
+namespace = ck2plus_to_vef
+
+country_event = {
+	id = ck2plus_to_vef.1
+
+	is_triggered_only = yes # triggered by on_startup action
+	hidden = yes
+	
+	immediate = {
+		hidden_effect = {
+			set_country_flag = ck2plus_technology_group
+			#change_technology_group = mesoamerican
+			random_country = {
+				limit = {
+					NOT = { has_country_flag = ck2plus_technology_group }
+				}
+				country_event = { id = ck2plus_to_vef.1 }
+			}
+		}
+	}
+}

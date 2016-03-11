@@ -1,0 +1,1128 @@
+namespace = vef_setup
+
+country_event = {
+	id = vef_setup.1
+	title = "vef_setup.1.t"
+	desc = "vef_setup.1.d"
+	picture = "VEF_BIG_BOOK_eventPicture"
+
+	fire_only_once = yes
+	is_triggered_only = yes # triggered by on_startup action
+	hidden = yes
+
+	trigger = {
+		NOT = { has_global_flag = veritas_et_fortitudo }
+		government = monarchy
+		ai = yes
+	}
+
+	immediate = {
+		hidden_effect = {
+			country_event = { id = ck2plus_to_vef.1 } # Assign Manual tech groups
+			set_global_flag = VeF_3.1
+			set_global_flag = veritas_et_fortitudo # Identify the mod for sub-mods
+			
+			country_event = { id = vef_barbarossa.1 days = 1 } # Barbary Pirates
+
+			every_country = {
+				set_country_flag = initialization_complete
+
+				# Initialize Variables
+				set_variable = { which = national_stability value = 300 }
+				if = {
+					limit = { NOT = { has_country_flag = vassal_boost_set } }
+					set_variable = { which = vassal_boost value = 0 }
+					set_country_flag = vassal_boost_set
+				}
+
+				# Run events for setup...
+				if = {
+					limit = { ai = no }
+					country_event = { id = vef_setup.2 }
+					if = {
+						limit = { is_random_new_world = yes }
+						country_event = { id = vef_setup.2000 }
+					}
+				}
+				country_event = { id = vef_newgov.1 }    # Set initial government values
+				country_event = { id = vef_libbuild.1 }	 # Set initial buildings; turned off until governments complete
+				country_event = { id = vef_newgov.90000 } # Initial Calculations
+
+				every_owned_province = {
+					limit = {
+						OR = {
+							continent = europe
+							region = maghreb_region
+							region = egypt_region
+							region = mashriq_region
+							region = khorasan_region
+							region = arabia_region
+							region = persia_region
+							region = japan_region
+							region = north_china_region
+							region = south_china_region
+							region = xinan_region
+							region = korea_region
+							development = 10
+						}
+						NOT = { has_building = basic_fort }
+						NOT = { has_province_modifier = dessert_oasis }
+						NOT = { province_group = ireland_group }
+					}
+					set_province_flag = starting_fort
+					if = {
+						limit = { has_influencing_fort = no }
+						add_building = basic_fort
+					}
+				}
+
+				# Tech Groups - for ease of adding groups to Europe
+				if = {
+					limit = {
+						OR = {
+							technology_group = scandinavian_tech
+							technology_group = western
+							technology_group = byzantine
+						}
+					}
+					set_country_flag = has_western_tech
+				}
+				# Generate heirs
+				if = {
+					limit = { 
+						NOT = { capital_scope = { continent = europe } }
+						government = monarchy
+						has_heir = no
+						NOT = { has_regency_trigger = yes }
+						OR = {
+							NOT = { tag = YUN }
+							NOT = { normal_or_historical_nations = yes }
+						}
+					}
+					random_list = {
+						15 = { define_heir = { dynasty = THIS adm = 3 mil = 3 dip = 3 claim = 70 } }
+						20 = { define_heir = { dynasty = THIS adm = 2 mil = 2 dip = 2 claim = 70 } }
+						35 = { define_heir = { dynasty = THIS adm = 0 mil = 0 dip = 0 claim = 70 } }
+						10 = { define_heir = { dynasty = THIS adm = 1 mil = 1 dip = 1 claim = 40 } }
+						5 = { define_heir = { dynasty = THIS adm = 4 mil = 4 dip = 4 claim = 90 } }
+						15 = {}
+					}
+				}
+				# Ruler Trait for initial ruler
+				if = {
+					limit = { NOT = { has_regency_trigger = yes } }
+					random_list = {
+						7 = { add_ruler_modifier = { name = ruler_trait_pious } }
+						6 = { add_ruler_modifier = { name = ruler_trait_builder } }
+						7 = { add_ruler_modifier = { name = ruler_trait_patron } }
+						6 = { add_ruler_modifier = { name = ruler_trait_extravagent } }
+						6 = { add_ruler_modifier = { name = ruler_trait_scholar } }
+						6 = { add_ruler_modifier = { name = ruler_trait_minister } }
+						6 = { add_ruler_modifier = { name = ruler_trait_warmonger } }
+						6 = { add_ruler_modifier = { name = ruler_trait_terror } }
+						7 = { add_ruler_modifier = { name = ruler_trait_hero } }
+						6 = { add_ruler_modifier = { name = ruler_trait_dove } }
+						6 = { add_ruler_modifier = { name = ruler_trait_equestrian } }
+						6 = { add_ruler_modifier = { name = ruler_trait_philanthropist } }
+						7 = { add_ruler_modifier = { name = ruler_trait_respected } }
+						6 = { add_ruler_modifier = { name = ruler_trait_hawk } }
+						6 = { add_ruler_modifier = { name = ruler_trait_strong } }
+						6 = { add_ruler_modifier = { name = ruler_trait_trade } }
+					}
+				}
+				if = {
+					limit = { has_country_modifier = hanseatic_league_member }
+					every_country = {
+						limit = { has_country_modifier = hanseatic_league_member }
+						add_opinion = { who = PREV modifier = hanseatic_league_friendship}
+					}
+				}
+
+				if = {
+					limit = {
+						tag = OSM
+						normal_or_historical_nations = yes
+					}
+					ghazi_unity_group = {
+						limit = {
+							NOT = { owned_by = OSM }
+							NOT = { is_claim = OSM }
+							NOT = { is_core = OSM }
+						}
+						add_permanent_claim = OSM
+					}
+				}
+
+				if = {
+					limit = {
+						tag = FLR
+						normal_or_historical_nations = yes
+					}
+					random_list = {
+						25 = { set_variable = { which = medici_optionb value = 1 } }
+						25 = { set_variable = { which = medici_optionb value = 2 } }
+						25 = { set_variable = { which = medici_optionb value = 3 } }
+						25 = { set_variable = { which = medici_optionb value = 4 } }
+					}
+					random_list = {
+						25 = { set_variable = { which = medici_optionc value = 1 } }
+						25 = { set_variable = { which = medici_optionc value = 2 } }
+						25 = { set_variable = { which = medici_optionc value = 3 } }
+						25 = { set_variable = { which = medici_optionc value = 4 } }
+					}
+				}
+
+				# Add modifiers for tech malus (replaces static values in technology.txt
+				# Default is level 8 - this is used for calcuating tech level differences
+				set_variable = { which = modernisation_level value = 8 }
+				if = {
+					limit = {
+						OR = {
+							technology_group = mesoamerican
+							technology_group = south_american
+							technology_group = north_american
+						}
+					}
+					add_country_modifier = { name = "modernisation_level_0" duration = -1 }
+					set_variable = { which = modernisation_level value = 0 }
+					# Need to account for Inca, etc
+					if = {
+						limit = { government = despotic_monarchy }
+						remove_country_modifier = modernisation_level_0
+						add_country_modifier = { name = "modernisation_level_1" duration = -1 }
+						set_variable = { which = modernisation_level value = 1 }
+					}
+				}
+				if = {
+					limit = { technology_group = pacific_islander }
+					add_country_modifier = { name = "modernisation_level_1" duration = -1 }
+					set_variable = { which = modernisation_level value = 1 }
+				}
+				if = {
+					limit = { technology_group = tribal_african_tech }
+					add_country_modifier = { name = "modernisation_level_2" duration = -1 }
+					set_variable = { which = modernisation_level value = 2 }
+				}
+				if = {
+					limit = { technology_group = sub_saharan }
+					add_country_modifier = { name = "modernisation_level_3" duration = -1 }
+					set_variable = { which = modernisation_level value = 3 }
+				}
+				if = {
+					limit = {
+						OR = {
+							technology_group = nomad_group
+							technology_group = sudanese_tech
+						}
+					}
+					add_country_modifier = { name = "modernisation_level_4" duration = -1 }
+					set_variable = { which = modernisation_level value = 4 }
+				}
+				if = {
+					limit = {
+						OR = {
+							technology_group = muslim
+							technology_group = niitaka
+							technology_group = chinese
+							technology_group = indopersian
+							technology_group = indian
+						}
+					}
+					add_country_modifier = { name = "modernisation_level_5" duration = -1 }
+					set_variable = { which = modernisation_level value = 5 }
+				}
+				if  = {
+					limit = { technology_group = ottoman }
+					add_country_modifier = { name = "modernisation_level_6" duration = -1 }
+					set_variable = { which = modernisation_level value = 6 }
+				}
+				if  = { 
+					limit = { technology_group = eastern }
+					add_country_modifier = { name = "modernisation_level_7" duration = -1 }
+					set_variable = { which = modernisation_level value = 7 }
+				}
+				set_country_flag = tech_modernization_initialized
+			}
+			
+			#Set advisors in Japan. Done here so that every country isn't trying to set their own cardinal
+			JAP = {
+				if = {
+					limit = {
+						papacy_active = yes
+						normal_or_historical_nations = yes
+					}
+					950 = { owner = { PREV = { add_cardinal = yes } } }
+					955 = { owner = { PREV = { add_cardinal = yes } } }
+					957 = { owner = { PREV = { add_cardinal = yes } } }
+					959 = { owner = { PREV = { add_cardinal = yes } } }
+					963 = { owner = { PREV = { add_cardinal = yes } } }
+					964 = { owner = { PREV = { add_cardinal = yes } } }
+					968 = { owner = { PREV = { add_cardinal = yes } } }
+					971 = { owner = { PREV = { add_cardinal = yes } } }
+					974 = { owner = { PREV = { add_cardinal = yes } } }
+					976 = { owner = { PREV = { add_cardinal = yes } } }
+					977 = { owner = { PREV = { add_cardinal = yes } } }
+					981 = { owner = { PREV = { add_cardinal = yes } } }
+					983 = { owner = { PREV = { add_cardinal = yes } } }
+					986 = { owner = { PREV = { add_cardinal = yes } } }
+					987 = { owner = { PREV = { add_cardinal = yes } } }
+					989 = { owner = { PREV = { add_cardinal = yes } } }
+				}
+			}
+
+			# After everything so the initial 400 stability is (hopefully) already applied
+			country_event = { id = vef_stability.1 } # Set the initial stability
+		}
+	}
+
+	option = {
+		name = "vef_setup.1.opta"
+	}	
+}
+
+country_event = {
+	id = vef_setup.2
+	title = "vef_setup.2.t"
+	desc = "vef_setup.2.d"
+	picture = "VEF_BIG_BOOK_eventPicture"
+
+	is_triggered_only = yes # triggered by vef_setup.1
+
+	option = {
+		trigger = {
+			tag = BYZ
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.4 }
+		}
+	}	
+	option = {
+		trigger = { 
+			tag = OSM
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.5 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = GRA
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.6 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = KOJ
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.7 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = EGY
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.8 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = FLR
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.9 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = SWE
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.10 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = BUR
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.11 }
+		}
+	}
+	#option = {
+	#	trigger = {
+	#	    OR = {
+	#	        tag = DNZ
+	#	        tag = HAM
+	#	        tag = LUB
+	#	        tag = BRM
+	#	    }
+	#		start_date = 1309.3.9
+	#		normal_or_historical_nations = yes
+	#	}
+	#	name = "vef_setup.1.opta"
+	#	hidden_effect = {
+	#		country_event = { id = vef_encyclopedia.1 }
+	#		country_event = { id = vef_setup.12 }
+	#		#if = {
+	#		#	limit = { tag = LUB }
+	#		#	country_event = { id = vef_hansa.20000 days = 2 }
+	#		#}
+	#	}
+	#}
+	option = {
+		trigger = { 
+			primary_culture = russian
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.13 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = FRA
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.14 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = YUN
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.15 }
+		}
+	}
+	option = {
+		trigger = {
+			tag = JAP
+			start_date = 1309.3.9
+			normal_or_historical_nations = yes
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.16 }
+		}
+	}
+	option = {
+		trigger = {
+			OR = {
+				normal_or_historical_nations = no
+				AND = {
+					NOT = { tag = BYZ }
+					NOT = { tag = GRA }
+					NOT = { tag = KOJ }
+					NOT = { tag = EGY }
+					NOT = { tag = FLR }
+					NOT = { tag = SWE }
+					NOT = { primary_culture = russian } 
+					NOT = { tag = BUR }
+					#NOT = { tag = HSA }
+					#NOT = { tag = BRM }
+					#NOT = { tag = LUB }
+					#NOT = { tag = DNZ }
+					#NOT = { tag = HAM }
+					NOT = { tag = FRA }
+					NOT = { tag = YUN }
+					NOT = { tag = OSM }
+					NOT = { tag = JAP }
+				}				
+				NOT = { start_date = 1309.3.9 }
+			}
+		}
+		name = "vef_setup.1.opta"
+		hidden_effect = {
+			country_event = { id = vef_encyclopedia.1 }
+			country_event = { id = vef_setup.17 }
+		}
+	}
+}
+
+# Merchant Republics warning
+country_event = {
+	id = vef_setup.3
+	title = "vef_setup.3.t"
+	desc = "vef_setup.3.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes # triggered by event vef_setup.1000
+	
+	trigger = {
+		OR = {
+			government = merchant_republic
+			government = hanseatic_league
+			government = hanseatic_union
+			government = venice_republic
+		}
+	}
+
+	option = {
+		name = "vef_setup.3.opta"
+	}
+}
+
+# Byzantium
+country_event = {
+	id = vef_setup.4
+	title = "vef_setup.4.t"
+	desc = "vef_setup.4.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = {
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.4.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Osman
+country_event = {
+	id = vef_setup.5
+	title = "vef_setup.5.t"
+	desc = "vef_setup.5.d"
+	picture = VEF_BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+	
+	option = {
+		name = "vef_setup.5.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Granada
+country_event = {
+	id = vef_setup.6
+	title = "vef_setup.6.t"
+	desc = "vef_setup.6.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.6.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Jerusalem
+country_event = {
+	id = vef_setup.7
+	title = "vef_setup.7.t"
+	desc = "vef_setup.7.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.7.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Egypt
+country_event = {
+	id = vef_setup.8
+	title = "vef_setup.8.t"
+	desc = "vef_setup.8.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.8.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Florence
+country_event = {
+	id = vef_setup.9
+	title = "vef_setup.9.t"
+	desc = "vef_setup.9.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.9.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Sweden
+country_event = {
+	id = vef_setup.10
+	title = "vef_setup.10.t"
+	desc = "vef_setup.10.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.10.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Burgundy
+country_event = {
+	id = vef_setup.11
+	title = "vef_setup.11.t"
+	desc = "vef_setup.11.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.11.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Hansa
+#country_event = {
+#	id = vef_setup.12
+#	title = "vef_setup.12.t"
+#	desc = "vef_setup.12.d"
+#	picture = VEF_BIG_BOOK_eventPicture
+#
+#	is_triggered_only = yes
+#	fire_only_once = yes
+#	
+#	trigger = { 
+#		normal_or_historical_nations = yes
+#	}
+#
+#	option = {
+#		name = "vef_setup.12.opta"
+#		hidden_effect = {
+#			if = {
+#				limit = { any_owned_province = { has_building = basic_fort } }
+#				country_event = { id = vef_setup.1000 }
+#			}
+#			if = {
+#				limit = {
+#					all_owned_province = { NOT = { has_building = basic_fort } }
+#				}
+#				if = {
+#					limit = {
+#						OR = {
+#							government = merchant_republic
+#							government = hanseatic_league
+#							government = hanseatic_union
+#							government = venice_republic
+#						}
+#					}
+#					country_event = { id = vef_setup.3 }
+#				}
+#			}
+#		}
+#	}
+#}
+
+# Russia
+country_event = {
+	id = vef_setup.13
+	title = "vef_setup.13.t"
+	desc = "vef_setup.13.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+	
+	option = {
+		name = "vef_setup.13.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+
+# France
+country_event = {
+	id = vef_setup.14
+	title = "vef_setup.14.t"
+	desc = "vef_setup.14.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+	
+	option = {
+		name = "vef_setup.14.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Yuan
+country_event = {
+	id = vef_setup.15
+	title = "vef_setup.15.t"
+	desc = "vef_setup.15.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.15.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Japan
+country_event = {
+	id = vef_setup.16
+	title = "vef_setup.16.t"
+	desc = "vef_setup.16.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+	
+	trigger = { 
+		normal_or_historical_nations = yes
+	}
+
+	option = {
+		name = "vef_setup.16.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+# Everyone else
+country_event = {
+	id = vef_setup.17
+	title = "vef_setup.17.t"
+	desc = "vef_setup.17.d"
+	picture = VEF_BIG_BOOK_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = "vef_setup.17.opta"
+		hidden_effect = {
+			if = {
+				limit = { any_owned_province = { has_building = basic_fort } }
+				country_event = { id = vef_setup.1000 }
+			}
+			if = {
+				limit = {
+					all_owned_province = { NOT = { has_building = basic_fort } }
+				}
+				if = {
+					limit = {
+						OR = {
+							government = merchant_republic
+							government = hanseatic_league
+							government = hanseatic_union
+							government = venice_republic
+						}
+					}
+					country_event = { id = vef_setup.3 }
+				}
+			}
+		}
+	}
+}
+
+#Information about fort mechanics
+country_event = {
+	id = vef_setup.1000
+	title = "vef_setup.1000.t"
+	desc = "vef_setup.1000.d"
+	picture = VEF_FORT_eventPicture
+
+	is_triggered_only = yes #Triggered by "state of the world" events
+
+	option = {
+		name = "vef_setup.1000.opta"
+		hidden_effect = {
+			if = {
+				limit = {
+					OR = {
+						government = merchant_republic
+						government = hanseatic_league
+						government = hanseatic_union
+						government = venice_republic
+					}
+				}
+				country_event = { id = vef_setup.3 }
+			}
+		}
+	}
+}
+
+# Friendly warning about Random New Worlds
+country_event = {
+	id = vef_setup.2000
+	title = "vef_setup.2000.t"
+	desc = "vef_setup.2000.d"
+	picture = VEF_EXPLORERS_eventPicture
+
+	is_triggered_only = yes # triggered by vef_setup.1
+
+	trigger = {
+		ai = no
+		is_random_new_world = yes
+	}
+
+	option = {
+		name = "vef_setup.2000.opta"
+	}
+}
