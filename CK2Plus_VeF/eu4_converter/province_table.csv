@@ -132,7 +132,7 @@ c_evora;61;61 - Alto Alentejo;
 c_mertola;60;60 - Baixo Altentejo;
 c_faro;59;59 - Algarve;
 
-# France
+# France, Burgundy, Brittany
 c_labourd;115;115 - Labourd;
 c_bearn;118;118 - Bearn;
 c_bigorre;119;119 - Tarbes;
@@ -198,7 +198,7 @@ c_guines;177;177 - Calais;
 c_guines;195;195 - Dunkirchen;
 c_hainaut;197;197 - Hainaut;
 
-# HRE
+# HRE, Germany, Lotheringen, Lowlands/Netherlands, Belgium
 c_venaissin;135;135 - Avignon;
 c_holstein;382;382 - Holstein;
 c_lubeck;381;381 - Lubeck;
@@ -264,7 +264,6 @@ c_gottingen;347;347 - Kassel;
 c_nassau;330;330 - Fulda;
 c_thuringen;348;348 - Thuringen;
 c_plauen;323;323 - Vogtland;
-c_litomerice;484;484 - Frydlantsko;
 c_namur;201;201 - Namur;
 c_liege;200;200 - Liege;
 c_laroche;202;202 - Bastogne;
@@ -277,10 +276,6 @@ c_wurzburg;329;329 - Aschaffenburg;
 c_wurzburg;325;325 - Wurzburg;
 c_bamberg;324;324 - Bamberg;
 c_bamberg;322;322 - Bayreuth;
-c_plzen;485;485 - Chebsko;
-c_praha;488;488 - Cechy;
-c_hradec;483;483 - Hradecko;
-c_olomouc;482;482 - Olomoucky;
 c_bar;178;178 - Barrois;
 c_metz;180;180 - Metz;
 c_lorraine;179;179 - Lotheringen;
@@ -300,9 +295,6 @@ c_niederbayern;304;304 - Ingolstadt;
 c_niederbayern;305;305 - Regensburg;
 c_niederbayern;306;306 - Landshut;
 c_niederbayern;301;301 - Straubing;
-c_plzen;486;486 - Plzen;
-c_domazlice;487;487 - Ceske Budejovice;
-c_brno;489;489 - Brnensky Udel;
 c_sundgau;318;318 - Sundgau;
 c_aargau;278;278 - Basel;
 c_neuchatel;277;277 - Neuchatel;
@@ -482,3 +474,84 @@ c_kexholm;431;431 - Vyborg;
 c_kexholm;432;432 - Kymmenedalen;
 c_onega;702;702 - Olonets;
 
+## Eastern Bloc States
+# Poland
+c_danzig;367;367 - Danzig;
+c_danzig;366;366 - Tuchel;
+c_marienburg;368;368 - Elbing;
+c_marienburg;369;369 - Marienburg;
+c_krain;475;478 - Krajna;
+c_plock;464;464 - Plock;
+c_plock;463;463 - Wizna;
+c_plock;466;466 - Rawa;
+c_plock;465;465 - Warszawa;
+c_kujawy;474;474 - Kujawy;
+c_kujawy;460;460 - Torun;
+c_gnieznienskie;473;473 - Gniezno;
+c_lausitz;472;472 - Leczyca;
+c_poznanskie;476;476 - Poznan;
+c_galindia;459;459 - Masuren;
+c_lower_silesia;477;477 - Glogow;
+c_lower_silesia;478;478 - Legnica;
+c_upper_silesia;479;479 - Wroclaw;
+c_sieradzko-leczyckie;471;471 - Sieradz;
+c_sandomierskie;468;468 - Sandomierz;
+c_sandomierskie;469;469 - Przemysl;
+c_beresty;467;467 - Lublin;
+c_opole;480;480 - Opole;
+c_opole;481;481 - Ratibor;
+c_krakowskie;470;470 - Krakow;
+
+# Czech Republic/Bohemia
+c_olomouc;482;482 - Olomoucky;
+c_hradec;483;483 - Hradecko;
+c_litomerice;484;484 - Frydlantsko;
+c_plzen;485;485 - Chebsko;
+c_plzen;486;486 - Plzen;
+c_domazlice;487;487 - Ceske Budejovice;
+c_praha;488;488 - Cechy;
+c_brno;489;489 - Brnensky Udel;
+
+# Hungary
+c_trencin;492;492 - Trencsen;
+c_abauj;493;493 - Abauj;
+c_bereg;494;494 - Ung;
+c_marmaros;495;495 - Maramures;
+c_pressburg;490;490 - Pozsony;
+c_nitra;491;491 - Nyitra;
+c_esztergom;523;523 - Komaron;
+c_pest;522;522 - Nograd;
+c_heves;517;517 - Heves;
+c_bihar;516;516 - Szabolcs;
+c_bihar;515;515 - Bihar;
+c_bihar;510;510 - Cluj;
+c_bihar;509;509 - Beszterce;
+c_sopron;526;526 - Gyor;
+c_vas;527;527 - Zala;
+c_fejer;525;525 - Fejer;
+c_pecs;528;528 - Pecs;
+c_pecs;520;520 - Bacska;
+c_pest;521;521 - Pest;
+c_csanad;518;518 - Bekes;
+c_csanad;514;514 - Arad;
+c_temes;513;513 - Temes;
+c_temes;519;519 - Torontal;
+c_feher;512;512 - Hunedoara;
+c_feher;511;511 - Alba;
+c_szekelyfold;507;507 - Szaszfold;
+c_szekelyfold;508;508 - Szekelyfold;
+
+# Croatia, Bosnia, Slavonia
+c_varadzin;544;544 - Varasd;
+c_krizevci;545;545 - Szlavonia;
+c_zagreb;533;533 - Zagreb;
+c_zagreb;534;534 - Sisak;
+c_usora;540;540 - Donji Kraji;
+c_belgrade;543;543 - Soli;
+c_belgrade;542;542 - Bosna;
+c_hum;539;539 - Hum;
+c_travonia;541;541 - Travunia;
+c_istria;532;532 - Lika;
+c_zadar;535;535 - Dalmazia;
+c_split;536;536 - Split;
+c_ragusa;537;537 - Ragusa;
