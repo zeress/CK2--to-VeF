@@ -3,28 +3,28 @@
 # Pagan
 
 pagan;animism;0;Generic Pagan
-norse_pagan;animism;0;Norse
+norse_pagan;norse_pagan_reformed;0;Reformed Norse
 norse_pagan_reformed;norse_pagan_reformed;0;Reformed Norse
-german_pagan;animism;0;Norse
+german_pagan;german_pagan_reformed;1;Reformed Germanic
 german_pagan_reformed;german_pagan_reformed;1;Reformed Germanic
-tengri_pagan;tengri_pagan_reformed;0;Tengri
+tengri_pagan;tengri;0;Reformed Tengri
 tengri_pagan_reformed;tengri;0;Reformed Tengri
-baltic_pagan;animism;0;Romuva
+baltic_pagan;romuva;0;Romuva
 baltic_pagan_reformed;romuva;0;Romuva
-finnish_pagan;animism;0;Suomenusko
+finnish_pagan;suomenusko;0;Reformed Suomenusko
 finnish_pagan_reformed;suomenusko;0;Reformed Suomenusko
-aztec;nahuatl;0;Nahuatl
+aztec;xochiyaoyotl;0;xochiyaoyotl
 aztec_reformed;xochiyaoyotl;0;xochiyaoyotl
-slavic_pagan;animism;0;Slavic
+slavic_pagan;slavicanism;0;Reformed Slavic
 slavic_pagan_reformed;slavicanism;0;Reformed Slavic
-west_african_pagan;animism;0;West African
+west_african_pagan;west_african_pagan_reformed;1;Reformed West African
 west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
 hellenic_pagan;hellenic;0;Hellenic
 zun_pagan;zoroastrianism;0;Zunist
 zun_pagan_reformed;zun_pagan_reformed;1;Zunist
 berber_pagan;berber_pagan;1;Tamazight
 jewish_pagan;jewish_pagan;1;Canaanite
-arab_pagan;animism;0;Generic Pagan
+arab_pagan;arab_pagan;1;Al-Asnam
 
 # Zoroastrianism
 
