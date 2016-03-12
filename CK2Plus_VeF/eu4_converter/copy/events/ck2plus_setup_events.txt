@@ -16,6 +16,7 @@ country_event = {
 					capital_scope = { superregion = europe_superregion }
 				}
 				change_technology_group = western
+				change_unit_type = western
 			}
 			if = {
 				limit = {
@@ -23,6 +24,7 @@ country_event = {
 					NOT = { capital_scope = { superregion = europe_superregion } }
 				}
 				change_technology_group = eastern
+				change_unit_type = eastern
 			}
 			if = {
 				limit = {
@@ -30,6 +32,7 @@ country_event = {
 					religion_group = reformed_pagan
 				}
 				change_technology_group = eastern
+				change_unit_type = eastern
 			}
 			if = {
 				limit = {
@@ -37,6 +40,7 @@ country_event = {
 					religion_group = muslim
 				}
 				change_technology_group = muslim
+				change_unit_type = muslim
 			}
 			if = {
 				limit = {
@@ -55,6 +59,7 @@ country_event = {
 					religion_group = muslim
 				}
 				change_technology_group = muslim
+				change_unit_type = muslim
 			}
 			if = {
 				limit = {
@@ -63,6 +68,7 @@ country_event = {
 					ai = yes
 				}
 				change_technology_group = sub_saharan
+				change_unit_type = sub_saharan
 			}
 			if = {
 				limit = {
@@ -76,6 +82,7 @@ country_event = {
 					}
 				}
 				change_technology_group = eastern
+				change_unit_type = eastern
 			}
 			# Europe continent block
 			if = {
@@ -87,6 +94,7 @@ country_event = {
 					}
 				}
 				change_technology_group = scandinavian_tech
+				change_unit_type = scandinavian_tech
 			}
 			if = {
 				limit = {
@@ -94,6 +102,7 @@ country_event = {
 					religion_group = muslim
 				}
 				change_technology_group = ottoman
+				change_unit_type = ottoman
 			}
 			if = {
 				limit = {
@@ -113,6 +122,7 @@ country_event = {
 					}
 				}
 				change_technology_group = eastern
+				change_unit_type = eastern
 			}
 			# Middle-east Block
 			if = {
@@ -125,6 +135,7 @@ country_event = {
 					religion_group = muslim
 				}
 				change_technology_group = muslim
+				change_unit_type = muslim
 			}
 			# Indian Block
 			if = {
@@ -132,6 +143,7 @@ country_event = {
 					capital_scope = { superregion = india_superregion }
 				}
 				change_technology_group = indian
+				change_unit_type = indian
 			}	
 			if = {
 				limit = {
@@ -139,12 +151,14 @@ country_event = {
 					religion_group = christian
 				}
 				change_technology_group = byzantine
+				change_unit_type = byzantine
 			}
 			if = {
 				limit = {
 					government = steppe_horde
 				}
 				change_technology_group = nomad_group
+				change_unit_type = nomad_group
 			}
 			# Fire the event again at a new country
 			random_country = {
