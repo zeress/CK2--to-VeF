@@ -73,6 +73,11 @@ country_event = {
 			if = {
 				limit = {
 					religion_group = reformed_pagan
+					NOR = { 
+						religion = xochiyaoyotl
+						religion = popol
+						religion = incan
+					}
 					OR = {
 						NOT = { capital_scope = { region = west_africa_region } }
 						AND = {
