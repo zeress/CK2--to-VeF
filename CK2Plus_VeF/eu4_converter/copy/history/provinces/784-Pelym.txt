@@ -1,0 +1,13 @@
+# Pelym
+# Manpower revision complete
+#Province IDs changed
+
+culture = uralic
+religion = slavicanism
+hre = no
+base_tax = 1 base_production = 1
+trade_goods = iron
+base_manpower = 0.1
+is_city = yes
+capital = "Pelym"
+discovered_by = nomad_group

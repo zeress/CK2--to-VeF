@@ -4,83 +4,83 @@
 
 pagan;animism;0;Generic Pagan
 norse_pagan;animism;0;Generic Pagan
-norse_pagan_reformed;norse_pagan_reformed;0;Reformed Norse
+norse_pagan_reformed;animism;0;Generic Pagan
 german_pagan;animism;0;Generic Pagan
-german_pagan_reformed;german_pagan_reformed;1;Reformed Germanic
+german_pagan_reformed;animism;0;Generic Pagan
 tengri_pagan;animism;0;Generic Pagan
-tengri_pagan_reformed;tengri;0;Reformed Tengri
+tengri_pagan_reformed;animism;0;Generic Pagan
 baltic_pagan;animism;0;Generic Pagan
-baltic_pagan_reformed;romuva;0;Romuva
+baltic_pagan_reformed;animism;0;Generic Pagan
 finnish_pagan;animism;0;Generic Pagan
-finnish_pagan_reformed;suomenusko;0;Reformed Suomenusko
-aztec;xochiyaoyotl;0;xochiyaoyotl
-aztec_reformed;xochiyaoyotl;0;xochiyaoyotl
+finnish_pagan_reformed;animism;0;Generic Pagan
+aztec;animism;0;Generic Pagan
+aztec_reformed;animism;0;Generic Pagan
 slavic_pagan;animism;0;Generic Pagan
 slavic_pagan_reformed;animism;0;Generic Pagan
 west_african_pagan;animism;0;Generic Pagan
-west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
+west_african_pagan_reformed;animism;0;Generic Pagan
 hellenic_pagan;animism;0;Generic Pagan
-zun_pagan;zoroastrianism;0;Zunist
-zun_pagan_reformed;zun_pagan_reformed;1;Zunist
-berber_pagan;berber_pagan;1;Tamazight
-jewish_pagan;jewish_pagan;1;Canaanite
-arab_pagan;arab_pagan;1;Al-Asnam
+zun_pagan;animism;0;Generic Pagan
+zun_pagan_reformed;animism;0;Generic Pagan
+berber_pagan;animism;0;Generic Pagan
+jewish_pagan;animism;0;Generic Pagan
+arab_pagan;animism;0;Generic Pagan
 
 # Zoroastrianism
 
-zoroastrian;zoroastrianism;0;Zoroastrian
-mazdaki;zoroastrianism;0;Zoroastrian
-manichean;manichean;1;Manichean
-mandaean;mandaean;1;Mandaean
-zurvanist;zoroastrianism;0;Zoroastrian
+zoroastrian;animism;0;Generic Pagan
+mazdaki;animism;0;Generic Pagan
+manichean;animism;0;Generic Pagan
+mandaean;animism;0;Generic Pagan
+zurvanist;animism;0;Generic Pagan
 
 # Christianity
 
-catholic;catholic;0;Catholic
-cathar;catholic;0;Catholic
-fraticelli;catholic;0;Catholic
-waldensian;catholic;0;Catholic
-lollard;catholic;0;Catholic
-adoptionist;catholic;0;Catholic
-orthodox;orthodox;0;Orthodox
-monophysite;Coptic;0;Coptic
-bogomilist;orthodox;0;Orthodox
-nestorian;nestorian;0;Nestorian
-monothelite;orthodox;0;Orthodox
-iconoclast;orthodox;0;Orthodox
-miaphysite;coptic;0;Coptic
-messalian;nestorian;0;Nestorian
-apostolic;apostolic;1;Apostolic
-paulician;apostolic;1;Paulician
-tondrakian;apostolic;1;Tondrakian
-chalcedonian;chalcedonian;1;Chalcedonian
+catholic;animism;0;Generic Pagan
+cathar;animism;0;Generic Pagan
+fraticelli;animism;0;Generic Pagan
+waldensian;animism;0;Generic Pagan
+lollard;animism;0;Generic Pagan
+adoptionist;animism;0;Generic Pagan
+orthodox;animism;0;Generic Pagan
+monophysite;animism;0;Generic Pagan
+bogomilist;animism;0;Generic Pagan
+nestorian;animism;0;Generic Pagan
+monothelite;animism;0;Generic Pagan
+iconoclast;animism;0;Generic Pagan
+miaphysite;animism;0;Generic Pagan
+messalian;animism;0;Generic Pagan
+apostolic;animism;0;Generic Pagan
+paulician;animism;0;Generic Pagan
+tondrakian;animism;0;Generic Pagan
+chalcedonian;animism;0;Generic Pagan
 
 # Islam
 
-sunni;sunni;0;Sunni
-zikri;sunni;0;Sunni
-yazidi;sunni;0;Sunni
-quranist;sunni;0;Sunni
-ibadi;ibadi;0;Ibadi
-shiite;shiite;0;Shiite
-bektashi;shiite;0;Shiite
-druze;shiite;0;Shiite
-hurufi;shiite;0;Shiite
-qarmatian;shiite;0;Shiite
+sunni;animism;0;Generic Pagan
+zikri;animism;0;Generic Pagan
+yazidi;animism;0;Generic Pagan
+quranist;animism;0;Generic Pagan
+ibadi;animism;0;Generic Pagan
+shiite;animism;0;Generic Pagan
+bektashi;animism;0;Generic Pagan
+druze;animism;0;Generic Pagan
+hurufi;animism;0;Generic Pagan
+qarmatian;animism;0;Generic Pagan
 
 # Judaism
-jewish;judaism;0;Jewish
-samaritan;judaism;0;Jewish
-karaite;judaism;0;Jewish
+jewish;animism;0;Generic Pagan
+samaritan;animism;0;Generic Pagan
+karaite;animism;0;Generic Pagan
 
 # Indian
-buddhist;buddhism;0;Buddhist
-hindu;hinduism;0;Hindu
-jain;jain;1;Jain
+buddhist;banimism;0;Generic Pagan
+hindu;animism;0;Generic Pagan
+jain;animism;0;Generic Pagan
 
 # CK2Plus Religions
 celtic_pagan;animism;0;Generic Pagan
 celtic_pagan_reformed;animism;0;Generic Pagan
-egyptian_pagan;egyptian_pagan;1;Kemetic
-aten_pagan;egyptian_pagan;1;Atenism
+egyptian_pagan;animism;0;Generic Pagan
+aten_pagan;animism;0;Generic Pagan
 
