@@ -81,6 +81,10 @@ country_event = {
 			if = {
 				limit = {
 					capital_scope = { region = scandinavia_region }
+					NOT = {
+						capital_scope = { area = kexholm_area }
+						capital_scope = { area = finland_area }
+					}
 				}
 				change_technology_group = scandinavian_tech
 			}
@@ -110,13 +114,6 @@ country_event = {
 				}
 				change_technology_group = eastern
 			}
-			if = {
-				limit = {
-					capital_scope = { continent = europe }
-					government = steppe_horde
-				}
-				change_technology_group = nomad_group
-			}
 			# Middle-east Block
 			if = {
 				limit = {
@@ -142,6 +139,12 @@ country_event = {
 					religion_group = christian
 				}
 				change_technology_group = byzantine
+			}
+			if = {
+				limit = {
+					government = steppe_horde
+				}
+				change_technology_group = nomad_group
 			}
 			# Fire the event again at a new country
 			random_country = {
