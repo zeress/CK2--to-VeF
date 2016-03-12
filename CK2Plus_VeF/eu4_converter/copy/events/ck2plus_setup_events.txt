@@ -13,9 +13,30 @@ country_event = {
 			# Generic Block, if nothing else fits decide based on religion and/or geography
 			if = {
 				limit = {
-					capital_scope = { continent = europe }
+					capital_scope = { superregion = europe_superregion }
 				}
 				change_technology_group = western
+			}
+			if = {
+				limit = {
+					capital_scope = { continent = europe }
+					NOT = { capital_scope = { superregion = europe_superregion } }
+				}
+				change_technology_group = eastern
+			}
+			if = {
+				limit = {
+					capital_scope = { continent = europe }
+					religion_group = reformed_pagan
+				}
+				change_technology_group = eastern
+			}
+			if = {
+				limit = {
+					capital_scope = { superregion = europe_superregion }
+					religion_group = muslim
+				}
+				change_technology_group = muslim
 			}
 			if = {
 				limit = {
@@ -39,16 +60,16 @@ country_event = {
 				limit = {
 					capital_scope = { region = west_africa_region }
 					NOT = { religion_group = muslim }
+					ai = yes
 				}
 				change_technology_group = sub_saharan
 			}
 			if = {
 				limit = {
-					religion_group = pagan
+					religion_group = reformed_pagan
 					OR = {
 						NOT = { capital_scope = { region = west_africa_region } }
 						AND = {
-							religion_group = pagan
 							capital_scope = { region = west_africa_region }
 							ai = no
 						}
@@ -84,7 +105,6 @@ country_event = {
 						capital_scope = { region = balkan_region }
 						capital_scope = { region = crimea_region }
 						capital_scope = { region = caucasia_region }
-						capital_scope = { region = balkan_region }
 						capital_scope = { region = balkan_region }
 					}
 				}
