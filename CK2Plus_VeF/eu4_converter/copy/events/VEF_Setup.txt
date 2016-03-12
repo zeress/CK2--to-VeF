@@ -18,7 +18,11 @@ country_event = {
 
 	immediate = {
 		hidden_effect = {
-			country_event = { id = ck2plus_to_vef.1 } # Assign Manual tech groups
+			if = {
+				limit = { NOT = { has_global_flag = ck2plus_to_vef_tech_assigned } }
+				set_global_flag = ck2plus_to_vef_tech_assigned
+				country_event = { id = ck2plus_to_vef.1 } # Assign Manual tech groups
+			}
 			set_global_flag = VeF_3.1
 			set_global_flag = veritas_et_fortitudo # Identify the mod for sub-mods
 			
