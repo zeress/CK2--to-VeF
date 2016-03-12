@@ -9,17 +9,51 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ck2plus_technology_group
+			# Limits sorted by priority with lowest priority being at the top
+			# Europe continent block
 			if = {
 				limit = {
-					capital_scope = { region = iberia_region }
+					capital_scope = { continent = europe }
+					NOT = { capital_scope = { region = scandinavia_region } }
 				}
-				change_technology_group = chinese
+				change_technology_group = western
 			}
 			if = {
 				limit = {
-					NOT = { capital_scope = { region = iberia_region } }
+					capital_scope = { region = scandinavia_region }
 				}
-				change_technology_group = mesoamerican
+				change_technology_group = scandinavian_tech
+			}
+			if = {
+				limit = {
+					capital_scope = { continent = europe }
+					religion_group = muslim
+				}
+				change_technology_group = muslim
+			}
+			if = {
+				limit = {
+					capital_scope = { region = anatolia_region }
+					religion_group = muslim
+				}
+				change_technology_group = ottoman
+			}
+			if = {
+				limit = {
+					capital_scope = { continent = europe }
+					OR = {
+						government = tribal_despotism
+						government = tribal_kingdom
+					}
+				}
+				change_technology_group = eastern
+			}
+			if = {
+				limit = {
+					capital_scope = { continent = europe }
+					government = steppe_horde
+				}
+				change_technology_group = nomad_group
 			}
 			random_country = {
 				limit = {
