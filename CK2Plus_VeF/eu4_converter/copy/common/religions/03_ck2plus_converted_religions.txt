@@ -1,4 +1,4 @@
-pagan = {
+reformed_pagan = {
 	celtic_pagan_reformed = {
 		color = { 0.2 0.6 0.03 }
 		country = {
@@ -74,7 +74,7 @@ christian = {
 		misguided_heretic = yes		# Other christians hate them less (?)
 	}
 }
-pagan = {
+reformed_pagan = {
 	arab_pagan = {
 		color = { 0.2 0.85 0.15 }
 		country = {
