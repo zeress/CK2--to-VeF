@@ -15,8 +15,8 @@ finnish_pagan;animism;0;Generic Pagan
 finnish_pagan_reformed;suomenusko;0;Reformed Suomenusko
 aztec;xochiyaoyotl;0;xochiyaoyotl
 aztec_reformed;xochiyaoyotl;0;xochiyaoyotl
-slavic_pagan;animism;0;Generic Pagan
-slavic_pagan_reformed;slavicanism;0;Reformed Slavic
+slavic_pagan;slavicanism;0;Reformed Slavic
+slavic_pagan_reformed;animism;0;Generic Pagan
 west_african_pagan;animism;0;Generic Pagan
 west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
 hellenic_pagan;animism;0;Generic Pagan
@@ -80,7 +80,7 @@ jain;jain;1;Jain
 
 # CK2Plus Religions
 celtic_pagan;animism;0;Generic Pagan
-celtic_pagan_reformed;animism;0;Generic Pagan
-egyptian_pagan;egyptian_pagan;1;Kemetic
-aten_pagan;egyptian_pagan;1;Atenism
+celtic_pagan_reformed;celtic_pagan_reformed;1;Tuatha
+egyptian_pagan;animism;0;Generic Pagan
+aten_pagan;animism;0;Generic Pagan
 
