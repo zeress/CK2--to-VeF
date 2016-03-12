@@ -10,26 +10,58 @@ country_event = {
 		hidden_effect = {
 			set_country_flag = ck2plus_technology_group
 			# Limits sorted by priority with lowest priority being at the top
-			# Europe continent block
+			# Generic Block, if nothing else fits decide based on religion and/or geography
 			if = {
 				limit = {
 					capital_scope = { continent = europe }
-					NOT = { capital_scope = { region = scandinavia_region } }
 				}
 				change_technology_group = western
 			}
 			if = {
 				limit = {
-					capital_scope = { region = scandinavia_region }
-				}
-				change_technology_group = scandinavian_tech
-			}
-			if = {
-				limit = {
-					capital_scope = { continent = europe }
+					OR = {
+						capital_scope = { superregion = near_east_superregion }
+						capital_scope = { superregion = persia_superregion }
+						capital_scope = { region = egypt_region }
+						capital_scope = { region = horn_of_africa_region }
+						capital_scope = { region = west_africa_region }
+						capital_scope = { region = maghreb_region }
+					}
+					NOT = {
+						capital_scope = { area = ajuuran_area }
+						capital_scope = { area = mogadishu_area }
+					}
 					religion_group = muslim
 				}
 				change_technology_group = muslim
+			}
+			if = {
+				limit = {
+					capital_scope = { region = west_africa_region }
+					NOT = { religion_group = muslim }
+				}
+				change_technology_group = sub_saharan
+			}
+			if = {
+				limit = {
+					religion_group = pagan
+					OR = {
+						NOT = { capital_scope = { region = west_africa_region } }
+						AND = {
+							religion_group = pagan
+							capital_scope = { region = west_africa_region }
+							ai = no
+						}
+					}
+				}
+				change_technology_group = eastern
+			}
+			# Europe continent block
+			if = {
+				limit = {
+					capital_scope = { region = scandinavia_region }
+				}
+				change_technology_group = scandinavian_tech
 			}
 			if = {
 				limit = {
@@ -44,6 +76,16 @@ country_event = {
 					OR = {
 						government = tribal_despotism
 						government = tribal_kingdom
+						capital_scope = { region = russia_region }
+						capital_scope = { region = ruthenia_region }
+						capital_scope = { region = baltic_region }
+						capital_scope = { region = poland_region }
+						capital_scope = { region = carpathia_region }
+						capital_scope = { region = balkan_region }
+						capital_scope = { region = crimea_region }
+						capital_scope = { region = caucasia_region }
+						capital_scope = { region = balkan_region }
+						capital_scope = { region = balkan_region }
 					}
 				}
 				change_technology_group = eastern
@@ -55,6 +97,33 @@ country_event = {
 				}
 				change_technology_group = nomad_group
 			}
+			# Middle-east Block
+			if = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = near_east_superregion }
+						capital_scope = { superregion = persia_superregion }
+					}
+					NOT = { capital_scope = { region = anatolia_region } }
+					religion_group = muslim
+				}
+				change_technology_group = muslim
+			}
+			# Indian Block
+			if = {
+				limit = {
+					capital_scope = { superregion = india_superregion }
+				}
+				change_technology_group = indian
+			}	
+			if = {
+				limit = {
+					capital = 588
+					religion_group = christian
+				}
+				change_technology_group = byzantine
+			}
+			# Fire the event again at a new country
 			random_country = {
 				limit = {
 					NOT = { has_country_flag = ck2plus_technology_group }
