@@ -9,7 +9,18 @@ country_event = {
 	immediate = {
 		hidden_effect = {
 			set_country_flag = ck2plus_technology_group
-			#change_technology_group = mesoamerican
+			if = {
+				limit = {
+					capital_scope = { region = iberia_region }
+				}
+				change_technology_group = chinese
+			}
+			if = {
+				limit = {
+					NOT = { capital_scope = { region = iberia_region } }
+				}
+				change_technology_group = mesoamerican
+			}
 			random_country = {
 				limit = {
 					NOT = { has_country_flag = ck2plus_technology_group }
