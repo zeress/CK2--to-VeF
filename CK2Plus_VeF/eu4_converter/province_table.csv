@@ -608,6 +608,7 @@ c_methone;575;575 - Messenia;
 c_monemvasia;576;576 - Laconia;
 c_naxos;578;578 - Naxos;
 c_chandax;577;577 - Creta;
+c_corfou;572;572 - Corfu;
 
 ## Steppes/Russia
 c_tirgoviste;504;504 - Dambovita;
@@ -964,7 +965,50 @@ c_shemakha;1540;1540 - Samaxi;
 c_shirvan;1539;1539 - Shirvan;
 c_albania;1549;1549 - Karabakh;
 
-#Frame, do not go past these provinces for definition
+# Anatolia
+c_adana;628;628 - Cilicia;
+c_teluch;629;629 - Anavarza;
+c_kaisereia;627;627 - Kayseri;
+c_kaisereia;622;622 - Bozok;
+c_amisos;626;626 - Amasya;
+c_paphlagonia;623;623 - Kastamonu;
+c_sinope;624;624 - Sinop;
+c_amisos;625;625 - Samsun;
+c_seleukeia;617;617 - Seleucia;
+c_seleukeia;619;619 - Karaman;
+c_ikonion;620;620 - Konya;
+c_galatia;621;621 - Kapadokya;
+c_ankyra;614;614 - Ankara;
+c_herakleia;613;613 - Karabuk;
+c_attaleia;616;616 - Alanya;
+c_sozopolis;615;615 - Beysehir;
+c_dorylaion;609;609 - Anatolikon;
+c_nikaea;610;610 - Goynuk;
+c_paphlagonia;612;612 - Paphlagonia;
+c_lykia;606;606 - Teke;
+c_lykia;607;607 - Hamid;
+c_lykia;597;597 - Fethiye;
+c_sozopolis;608;608 - Karahisar;
+c_laodikeia;605;605 - Ladik;
+c_laodikeia;604;604 - Kutahya;
+c_laodikeia;598;598 - Denizli;
+c_laodikeia;599;599 - Aydin;
+c_kyzikos;600;600 - Saruhan;
+c_kyzikos;601;601 - Karesi;
+c_dorylaion;603;603 - Eskisehir;
+c_kyzikos;602;602 - Bithynia;
+c_nikomedeia;611;611 - Optimatoi;
+c_rhodos;596;596 - Rhodos;
+c_ephesos;595;595 - Mugla;
+c_smyrna;593;593 - Izmir;
+c_smyrna;592;592 - Scio;
+c_abydos;594;594 - Bergama;
+c_abydos;590;590 - Biga;
+c_lesbos;591;591 - Lesbos;
+c_famagusta;618;618 - Cyprus;
+c_constantine;588;588 - Constantinople;
+
+#Frame, do not go past these provinces for definitions
 c_baygal;901;901 - Ude;
 c_kara_khorum;898;898 - Ikh Khuree;
 c_kara_khorum;885;885 - Qaraqorum;
