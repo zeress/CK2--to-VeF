@@ -87,7 +87,7 @@ tocharian;tocharian;1;Tocharian
 # Arabic
 
 bedouin_arabic;bedouin_arabic;0;Bedouin Arabic
-maghreb_arabic;berber;0;Berber
+maghreb_arabic;zenata;1;Zenata
 levantine_arabic;levantine_arabic;1;Levantine
 egyptian_arabic;al_misr_arabic;0;Egyptian
 andalusian_arabic;andalucian;0;Andalusian Arabic
@@ -129,13 +129,15 @@ afghan;afghani;0;Afghan
 
 coptic;coptic;1;Coptic
 nubian;nubian;0;Nubian
-ethiopian;amhara;0;Ethiopian
+ethiopian;amharic;1;Ethiopian
 somali;somali;0;Somali
 
 
 # West African
 
-manden;mali;0;Manden
+manden;malinke;1;Malinke
+jolof;wolof;1;Jolof
+sosso;songhai;1
 
 # Mesoamerican
 
@@ -173,9 +175,7 @@ sicilian_greek;sicilian;0;Sicilian
 cornish;cornish;1;Cornish
 gallawa;gallawa;1;Gallawa
 sicilian_arabic;sicilian;0;Sicilian
-sosso;mali;0;Sosso
-jolof;senegambian;0;Jolof
-bafour;tuareg;0;Bafour
+bafour;tuareg;1;Tuareg
 outremer;outremer;1;Outremer
 latin;c_latin;1;Latin
 assyrian;aramaic;0;Aramaic
