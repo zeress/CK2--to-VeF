@@ -1170,6 +1170,43 @@ c_tharasset;1672;1672 - Guelmim;
 c_sijilmasa;1669;1669 - Sijilmassa;
 c_canarias;58;58 - The Canarias;
 
+# Sub-Saharan West Africa
+c_morfil;1816;1816 - Tekrur;
+c_sijilmasa;1678;1678 - Tuat;
+c_taghaza;1677;1677 - Taoudeni;
+c_taghaza;1676;1676 - Arawan;
+c_ouadane;1675;1675 - Walata;
+c_idjil;1674;1674 - Saqiyah Al-Hamraa;
+c_waalo;1817;1817 - Waalo;
+c_tabacounda;1815;1815 - Tabacounda;
+c_cayor;1821;1821 - Cayor;
+c_linguere;1818;1818 - Jolof;
+c_baol;1820;1820 - Baol;
+c_ziguincha;1819;1819 - Sine Saloum;
+c_ziguincha;1813;1813 - Kaabu;
+c_yaresna;1814;1814 - Bonduy;
+c_aoudagast;1812;1812 - Bambuk;
+c_bambuk;1811;1811 - Futaa Jaloo;
+c_bambuk;1809;1809 - Bure;
+c_oualata;1808;1808 - Khasso;
+c_bamako;1807;1807 - Bamako;
+c_bamako;1801;1801 - Djenne;
+c_bamako;1800;1800 - Mande;
+c_tagant;1805;1805 - Koumbi Saleh;
+c_niono;1806;1806 - Kaarta;
+c_niono;1804;1804 - Segou;
+c_soumpi;1803;1803 - Macina;
+c_timbuktu;1802;1802 - Timbuktu;
+c_gao;1790;1790 - Gao;
+c_gao;1778;1778 - Dendi;
+c_tadmekka;1682;1682 - Tadmekka;
+c_mali;1791;1791 - Haayre;
+c_zarma;1789;1789 - Gurma;
+c_bolgatanga;1792;1792 - Yatenga;
+c_gurma;1793;1793 - Tenkodogo;
+c_gurma;1794;1794 - Wagadugu;
+c_ghana;1795;1795 - Boussouma;
+
 #Frame, do not go past these provinces for definitions
 c_baygal;901;901 - Ude;
 c_kara_khorum;898;898 - Ikh Khuree;
