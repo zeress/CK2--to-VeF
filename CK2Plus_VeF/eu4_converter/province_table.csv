@@ -1092,6 +1092,37 @@ c_alexandria;1635;1635 - Iskandariyya;
 c_al_alamayn;1636;1636 - Tarrana;
 c_zurq;1688;1688 - Siwa;
 
+# Nubia, Ethiopia/Abyssinia, Ifat, Horn of Africa
+c_sama;1697;1697 - Blue Nile;
+c_soba;1737;1737 - Agew;
+c_soba;1736;1736 - Gojiam;
+c_melut;1740;1740 - Keffa;
+c_melut;1729;1729 - Welamo;
+c_sennar;1734;1734 - Dembiya;
+c_asosa;1738;1738 - Damo;
+c_asosa;1735;1735 - Shewa;
+c_asosa;1739;1739 - Kambaata;
+c_asosa;1730;1730 - Hadiya;
+c_ankober;1728;1728 - Arbabni;
+c_ankober;1726;1726 - Dawaro;
+c_ankober;1727;1727 - Baale;
+c_ankober;1724;1724 - Gidayo;
+c_ankober;1725;1725 - Hargaya;
+c_harer;1707;1707 - Ifat;
+c_harer;1708;1708 - Harar;
+c_berbera;1710;1710 - Berbera;
+c_berbera;1711;1711 - Dakkar;
+c_berbera;1712;1712 - Warsangam;
+c_busaso;1713;1713 - Majerteen;
+c_busaso;1715;1715 - Gaalkakyo;
+c_tadjoura;1709;1709 - Zeila;
+c_tadjoura;1705;1705 - Taadjuura;
+c_gondar;1731;1731 - Wollo;
+c_gondar;1732;1732 - Lasta;
+c_gondar;1733;1733 - Gondar;
+c_aksum;1700;1700 - Aksum;
+
+## North Africa
 # Tunesia
 c_tobruk;1637;1637 - Bardiya;
 c_cyrenaica;1638;1638 - Darnah;
@@ -1120,6 +1151,7 @@ c_orania;1657;1657 - Wehran;
 c_tlemcen;1658;1658 - Tala Imsan;
 c_hanyan;1656;1656 - Saida;
 
+## West Africa
 # Morocco
 c_snassen;1660;1660 - Melila;
 c_figuig;1659;1659 - Oujda;
