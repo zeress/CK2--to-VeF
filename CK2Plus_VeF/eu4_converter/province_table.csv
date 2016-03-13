@@ -939,7 +939,7 @@ c_amida;1555;1555 - Diyarbakir;
 c_lykandos;630;630 - Elbistan;
 c_tadmor;1614;1614 - Tadmor;
 c_hama;1616;1616 - Hammah;
-c_tripolitana;1617;1617 - Tarabulus;
+c_tripoli;1617;1617 - Tarabulus;
 c_aleppo;1619;1619 - Aleppo;
 c_aintab;1620;1620 - Antep;
 c_antiocheia;1618;1618 - Antioch;
@@ -1062,6 +1062,80 @@ c_hajr;1572;1572 - Al Arid;
 c_hail;1567;1567 - Hafar al-Batin;
 c_socotra;1714;1714 - Suqutra;
 c_sharqiyah;1573;1573 - Yabrin;
+
+### Africa
+## East Africa
+# Egypt
+c_quena;1626;1626 - Qusayr;
+c_nubia;1701;1701 - Suakin;
+c_akordat;1702;1702 - Massawa;
+c_barka;1703;1703 - Debarwa;
+c_barka;1699;1699 - Tigray;
+c_kassala;1698;1698 - Butana;
+c_sennar;1696;1696 - Sennar;
+c_sennar;1694;1694 - Alodia;
+c_nahud;1695;1695 - White Nile;
+c_atbarah;1693;1693 - Mereo;
+c_farash;1692;1692 - Makuria;
+c_shamal;1691;1691 - Dotawo;
+c_shamal;1690;1690 - Nobatia;
+c_makuria;1627;1627 - Aswan;
+c_makuria;1628;1628 - Qina;
+c_makuria;1629;1629 - Asyut;
+c_makuria;1630;1630 - Minya;
+c_makuria;1689;1689 - Kharga;
+c_cairo;1631;1631 - Qahirah;
+c_gizeh;1632;1632 - Fayoum;
+c_gabiyaha;1633;1633 - Gharbeyya;
+c_delta;1634;1634 - Rashid;
+c_alexandria;1635;1635 - Iskandariyya;
+c_al_alamayn;1636;1636 - Tarrana;
+c_zurq;1688;1688 - Siwa;
+
+# Tunesia
+c_tobruk;1637;1637 - Bardiya;
+c_cyrenaica;1638;1638 - Darnah;
+c_syrte;1639;1639 - Bangazi;
+c_leptis_magna;1640;1640 - Sirte;
+c_tripolitana;1641;1641 - Tadmor;
+c_tripolitana;1681;1681 - Ghadammes;
+c_gabes;1642;1642 - Gabes;
+c_gabes;1643;1643 - Ggherbi;
+c_mahdia;1644;1644 - Sfax;
+c_mahdia;1647;1647 - Susa;
+c_kairwan;1645;1645 - Qafsah;
+c_medjerda;1646;1646 - Kairouan;
+c_tunis;1648;1648 - Tunis;
+c_bizerte;1649;1649 - Bizerte;
+
+# Algiers
+c_annaba;1650;1650 - Annaba;
+c_constantine;1651;1651 - Constantine;
+c_biskra;1652;1652 - Biskra;
+c_biskra;1679;1679 - Laghwat;
+c_bejaija;1653;1653 - Tamurt Leqbayel;
+c_beni_yanni;1654;1654 - Algiers;
+c_ouled_nail;1655;1655 - Tiaret;
+c_orania;1657;1657 - Wehran;
+c_tlemcen;1658;1658 - Tala Imsan;
+c_hanyan;1656;1656 - Saida;
+
+# Morocco
+c_snassen;1660;1660 - Melila;
+c_figuig;1659;1659 - Oujda;
+c_tangiers;1662;1662 - Tangier;
+c_cebta;1661;1661 - Sebtah;
+c_infa;1664;1664 - Rabat;
+c_fes;1663;1663 - Fez;
+c_marrakech;1665;1665 - Meknas;
+c_massat;1666;1666 - Casablanca;
+c_anti-atlas;1667;1667 - Marrakesh;
+c_anti-atlas;1668;1668 - Tassurt;
+c_ifni;1673;1673 - Ifni;
+c_ifni;1671;1671 - Souss;
+c_ifni;1670;1670 - Warzazat;
+c_tharasset;1672;1672 - Guelmim;
+b_grancanaria;58;58 - The Canarias;
 
 #Frame, do not go past these provinces for definitions
 c_baygal;901;901 - Ude;
