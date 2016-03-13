@@ -142,6 +142,18 @@ country_event = {
 				change_technology_group = muslim
 				change_unit_type = muslim
 			}
+			if = {
+				limit = {
+					OR = {
+						capital_scope = { superregion = near_east_superregion }
+						capital_scope = { superregion = persia_superregion }
+					}
+					NOT = { capital_scope = { region = anatolia_region } }
+					NOT = { religion_group = muslim }
+				}
+				change_technology_group = eastern
+				change_unit_type = eastern
+			}
 			# Indian Block
 			if = {
 				limit = {
@@ -160,7 +172,13 @@ country_event = {
 			}
 			if = {
 				limit = {
-					government = steppe_horde
+					OR = {
+						government = steppe_horde
+						capital_scope = { region = siberia_region }
+						capital_scope = { region = central_asia_region }
+						capital_scope = { area = gansu_area }
+						capital_scope = { region = mongolia }
+					}
 				}
 				change_technology_group = nomad_group
 				change_unit_type = nomad_group
