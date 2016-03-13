@@ -865,6 +865,7 @@ c_tobol;800;800 - Kurgan;
 c_tyumen;801;801 - Ostyaki;
 c_tyumen;802;802 - Verkhoturye;
 
+## Middle East
 # Persia
 c_armail;1497;1497 - Bela;
 c_quzdar;1496;1496 - Khalat;
@@ -1007,6 +1008,60 @@ c_abydos;590;590 - Biga;
 c_lesbos;591;591 - Lesbos;
 c_famagusta;618;618 - Cyprus;
 c_constantine;588;588 - Constantinople;
+
+# Arabia
+c_beirut;1612;1612 - Sayda;
+c_damascus;1613 - Dimashq;;
+c_jerusalem;1611;1611 - al-Quds;
+c_darum;1610;1610 - Ghazzah;
+c_amman;1608;1608 - Ajloun;
+c_negev;1609;1609 - Negev;
+c_negev;1607;1607 - Karak;
+c_al_aqabah;1606;1606 - Maan;
+c_sinai;1623;1623 - Sina;
+c_sarqihya;1625;1625 - as-Suways;
+c_pelusia;1624;1624 - Dumyat;
+c_hijaz;1604;1604 - Taima;
+c_hijaz;1605;1605 - Tabuk;
+c_medina;1603;1603 - Madinah;
+c_medina;1602;1602 - Yanbu al-Bahr;
+c_medina;1601;1601 - Madin Sulaym;
+c_jeddah;1599;1599 - Jeddah;
+c_mecca;1600;1600 - Makkah;
+c_mecca;1598;1598 - Truba;
+c_asir;1597;1597 - Asir;
+c_sanaa;1596;1596 - Jazan;
+c_sanaa;1595;1595 - Najran;
+c_sanaa;1593;1593 - Sana;
+c_sanaa;1594;1594 - Jawf;
+c_taizz;1592;1592 - Mukha;
+c_aden;1591;1591 - Adan;
+c_bayda;1590;1590 - Kindah;
+c_kathiri;1589;1589 - Kathiri;
+c_mahra;1588;1588 - Maharh;
+c_dhofar;1587;1587 - Zufar;
+c_duqm;1586;1586 - Wusta;
+c_duqm;1585;1585 - Ash Sharqiyah;
+c_muscat;1584;1584 - Masqat;
+c_hajar;1582;1582 - Nizwa;
+c_hajar;1583;1583 - Suhar;
+c_dhu_zabi;1581;1581 - Qawasim;
+c_dhu_zabi;1579;1579 - Bani Yas;
+c_dhu_zabi;1580;1580 - Liwa;
+c_dhu_zabi;1578;1578 - Abd al-Qays;
+c_dhu_zabi;1576;1576 - Qatar;
+c_al_hasa;1575;1575 - Hufuf;
+c_bahrein;1577;1577 - Awal;
+c_damman;1574;1574 - Qatif;
+c_kuwait;1566;1566 - Grane;
+c_al_jawf;1568;1568 - Jabal Shammar;
+c_halaban;1569;1569 - Unaizah;
+c_halaban;1570;1570 - Tamara;
+c_halaban;1571;1571 - Falaj;
+c_hajr;1572;1572 - Al Arid;
+c_hail;1567;1567 - Hafar al-Batin;
+c_socotra;1714;1714 - Suqutra;
+c_sharqiyah;1573;1573 - Yabrin;
 
 #Frame, do not go past these provinces for definitions
 c_baygal;901;901 - Ude;
