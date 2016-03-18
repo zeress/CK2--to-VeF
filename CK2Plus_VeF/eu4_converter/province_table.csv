@@ -1258,6 +1258,18 @@ c_mandapika;1418;1418 - Rewakantha;
 c_ujjayini;1417;1417 - Mandsaur;
 c_ujjayini;1405;1405 - Mandu;
 
+#NE India
+c_vadodara;1419;1419 - Vadodara;
+c_navasarika;1403;1403 - Surat;
+c_nandurbar;1402;1402 - Baglana;
+c_burhanpur;1404;1404 - Khandesh;
+c_nanded;1400;1400 - WestBerar;
+c_balkonda;1397;1397 - Mahur;
+c_canda;1398;1398 - Chanda;
+c_cakrakuta;1353;1353 - Bastar;
+c_nandapur;1352;1352 - Garjat;
+c_puri;1351;1351 - Srikakulam;
+
 #Frame, do not go past these provinces for definitions
 c_baygal;901;901 - Ude;
 c_kara_khorum;898;898 - Ikh Khuree;
