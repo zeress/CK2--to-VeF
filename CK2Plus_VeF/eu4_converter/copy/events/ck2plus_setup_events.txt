@@ -154,6 +154,8 @@ country_event = {
 						capital_scope = { superregion = near_east_superregion }
 						capital_scope = { superregion = persia_superregion }
 						religion_group = dualism
+						religion = egyptian_pagan_heresy
+						religion = egyptian_pagan
 					}
 					NOT = { capital_scope = { region = anatolia_region } }
 				}
