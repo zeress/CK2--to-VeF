@@ -198,7 +198,7 @@ Generic_ETH_ideas = {
 	
 	trigger = {
 		NOT = { tag = ETH }
-		primary_culture = ethiopian
+		primary_culture = amharic
 	}
 	free = yes		#will be added at load.
 	
@@ -485,9 +485,11 @@ Generic_arabian_ideas = {
 			tag = ARB	#Arabia, Middle East addition
 			tag = SHM
 		}
-		primary_culture = levantine_arabic
-		primary_culture = al_misr_arabic
-		primary_culture = bedouin_arabic
+		OR = {
+			primary_culture = al_suryah_arabic
+			primary_culture = al_misr_arabic
+			primary_culture = bedouin_arabic
+		}
 	}
 	free = yes
 	
@@ -573,16 +575,7 @@ Generic_west_african_ideas = {
 	}
 	
 	trigger = {
-		OR = {
-			AND = {
-				technology_group = sub_saharan
-				NOT = {
-					tag = LOA
-					tag = NDO
-				}
-			}
-			primary_culture = mali
-		}
+		capital_scope = { region = west_africa_region }
 	}
 	free = yes
 	
@@ -665,7 +658,6 @@ crusader_latin_ideas = {
 	}
 	
 	trigger = {
-		tag = BYZ
 		culture = c_latin
 	}
 	free = yes
@@ -790,8 +782,7 @@ zoroastrian_persia_ideas = {
 	}
 	
 	trigger = {
-		culture_group = iranian
-		religion = zoroastrian
+		religion_group = dualism
 	}
 	free = yes
 	
@@ -928,7 +919,10 @@ hellenic_ideas = {
 	}
 	
 	trigger = {
-		religion = hellenic_pagan
+		OR = {
+			religion = hellenic_pagan
+			religion = titan_pagan
+		}
 	}
 	free = yes
 	
