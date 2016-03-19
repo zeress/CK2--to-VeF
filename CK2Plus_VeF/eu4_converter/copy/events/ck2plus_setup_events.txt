@@ -49,7 +49,6 @@ country_event = {
 						capital_scope = { superregion = persia_superregion }
 						capital_scope = { region = egypt_region }
 						capital_scope = { region = horn_of_africa_region }
-						capital_scope = { region = west_africa_region }
 						capital_scope = { region = maghreb_region }
 					}
 					NOT = {
@@ -65,10 +64,17 @@ country_event = {
 				limit = {
 					capital_scope = { region = west_africa_region }
 					NOT = { religion_group = muslim }
-					ai = yes
 				}
 				change_technology_group = sub_saharan
 				change_unit_type = sub_saharan
+			}
+			if = {
+				limit = {
+					capital_scope = { region = west_africa_region }
+					religion_group = muslim
+				}
+				change_technology_group = sudanese_tech
+				change_unit_type = sudanese_tech
 			}
 			if = {
 				limit = {
@@ -86,8 +92,8 @@ country_event = {
 						}
 					}
 				}
-				change_technology_group = eastern
-				change_unit_type = eastern
+				change_technology_group = western
+				change_unit_type = western
 			}
 			# Europe continent block
 			if = {
@@ -147,12 +153,12 @@ country_event = {
 					OR = {
 						capital_scope = { superregion = near_east_superregion }
 						capital_scope = { superregion = persia_superregion }
+						religion_group = dualism
 					}
 					NOT = { capital_scope = { region = anatolia_region } }
-					NOT = { religion_group = muslim }
 				}
-				change_technology_group = eastern
-				change_unit_type = eastern
+				change_technology_group = muslim
+				change_unit_type = muslim
 			}
 			# Indian Block
 			if = {

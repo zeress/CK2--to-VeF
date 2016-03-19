@@ -15,8 +15,8 @@ finnish_pagan;animism;0;Generic Pagan
 finnish_pagan_reformed;suomenusko;0;Reformed Suomenusko
 aztec;xochiyaoyotl;0;xochiyaoyotl
 aztec_reformed;xochiyaoyotl;0;xochiyaoyotl
-slavic_pagan;slavicanism;0;Reformed Slavic
-slavic_pagan_reformed;animism;0;Generic Pagan
+slavic_pagan;animism;0;Generic Pagan
+slavic_pagan_reformed;slavicanism;0;Reformed Slavic
 west_african_pagan;animism;0;Generic Pagan
 west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
 hellenic_pagan;hellenic;1;Hellenic
@@ -25,7 +25,7 @@ zun_pagan;zoroastrianism;0;Zunist
 zun_pagan_reformed;zun_pagan_reformed;1;Zunist
 berber_pagan;berber_pagan;1;Tamazight
 jewish_pagan;jewish_pagan;1;Canaanite
-arab_pagan;arab_pagan;1;Al-Asnam
+arab_pagan;sunni;1;Sunni
 
 # Zoroastrianism
 
