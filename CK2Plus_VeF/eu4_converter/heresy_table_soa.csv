@@ -35,3 +35,9 @@ arab_pagan;arab_pagan;1;Meccan
 # Shiite Heresies
 druze;druze;1;Druze
 hurufi;hurufi;1;hurufi
+
+#Hellenic
+titan_pagan;hellenic;1;Hellenic
+
+# Kemetic
+aten_pagan;egyptian_pagan_heresy;1;Atenic

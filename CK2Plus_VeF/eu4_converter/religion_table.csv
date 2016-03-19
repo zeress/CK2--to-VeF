@@ -19,7 +19,8 @@ slavic_pagan;slavicanism;0;Reformed Slavic
 slavic_pagan_reformed;animism;0;Generic Pagan
 west_african_pagan;animism;0;Generic Pagan
 west_african_pagan_reformed;west_african_pagan_reformed;1;Reformed West African
-hellenic_pagan;animism;0;Generic Pagan
+hellenic_pagan;hellenic;1;Hellenic
+titan_pagan;hellenic;1;Hellenic
 zun_pagan;zoroastrianism;0;Zunist
 zun_pagan_reformed;zun_pagan_reformed;1;Zunist
 berber_pagan;berber_pagan;1;Tamazight
@@ -81,6 +82,6 @@ jain;jain;1;Jain
 # CK2Plus Religions
 celtic_pagan;animism;0;Generic Pagan
 celtic_pagan_reformed;celtic_pagan_reformed;1;Tuatha
-egyptian_pagan;animism;0;Generic Pagan
-aten_pagan;animism;0;Generic Pagan
+egyptian_pagan;egyptian_pagan;1;Kemetic
+aten_pagan;egyptian_pagan;1;Kemetic
 
