@@ -1212,10 +1212,11 @@ c_ghana;1795;1795 - Boussouma;
 ### India
 # North West
 # NW India
+
 c_debul;1443;1443 - Thatta;
 c_siwistan;1444;1444 - Schwan;
 c_bhakkar;1445;1445 - Bhakkar;
-c_kafirkot;1495;1945 - Behbahan;
+c_kafirkot;1495;1495 - Behbahan;
 c_bannu;1453;1453 - SindSagar;
 c_purushapura;1455;1455 - Peshawar;
 c_udabhanda;1456;1456 - Margalla;
@@ -1235,14 +1236,15 @@ c_bhumilka;1422;1422 - Girnar;
 c_valabhi;1421;1421 - Bhavnagar;
 c_khetaka;1420;1420 - Khonj;
 c_sarasvata_mandala;1426;1426 - Patan;
-c_godwad;1429;1429 - Gorwar;
+c_godwad;1429;1429 - Chittor;
 c_mandavyapura;1440;1440 - Marwar;
+c_mandavyapura;1339;1339 - Gorwar;
 c_vikramapura;1437;1437 - Jangladesh;
 c_hisar;1448;1448 - Bhattiana;
 c_tribandapura;1450;1450 - Amritsar;
 c_trigarta;1451;1451 - Doaba;
 c_sthanisvara;1449;1449 - Panipat;
-c_hastinapura;1462;1462 - UpperDoab;
+c_hastinapura;1462;1462 - UpperDoab
 c_katehar;1463;1463 - Katehar;
 c_delhi;1433;1433 - Delhi;
 c_mathura;1432;1432 - CentralDoab;
