@@ -131,13 +131,14 @@ coptic;coptic;1;Coptic
 nubian;nubian;0;Nubian
 ethiopian;amharic;1;Ethiopian
 somali;somali;0;Somali
-
+beja;beja;1;Beja
 
 # West African
 
 manden;malinke;1;Malinke
 jolof;wolof;1;Jolof
-sosso;songhai;1
+sosso;mali;0;
+songhai;songhai;0;Songhai
 
 # Mesoamerican
 
