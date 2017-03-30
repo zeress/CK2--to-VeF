@@ -6,11 +6,20 @@ norse;norse;1;Norse
 swedish;swedish;0;Swedish
 norwegian;norwegian;0;Norwegian
 danish;danish;0;Danish
-old_saxon;old_saxon;1;Saxon
+old_saxon;saxon;0;Saxon
 
 # Central Germanic
 
+imperial_german;german;1;German
 german;german;1;German
+franconian;franconian;0;Franconian
+swabian;swabian;0;Swabian
+swiss;swiss;0;Swiss
+bavarian;bavarian;0;Bavarian
+austrian;austrian;0;Austrian
+teutonic;prussian;0;Prussian
+colognian;colognian;1;Colognian
+thuringian;thuringian;1;Thuringian
 suebi;suebi;1;Suebi
 
 # West Germanic
@@ -19,8 +28,13 @@ old_frankish;frankish;1;Frankish
 english;english;0;English
 saxon;anglosaxon;0;Anglo-Saxon
 dutch;dutch;0;Dutch
-visigothic;visigothic;1;Visigothic
 english_norse;anglo_norse;1;Anglo-Norse
+
+# East Germanic
+old_gothic;old_gothic;1;Old Goths
+visigothic;visigothic;1;Visigothic
+ostrogothic;ostrogothic;1;Ostrogoths
+burgundian;burgundian;1;burgundian
 
 # Latin
 
@@ -48,6 +62,7 @@ georgian;georgian;0;Georgian
 
 irish;irish;0;Irish
 scottish;scottish;0;Scottish
+scots;scottish;0;Scottish
 pictish;pictish;1;Pictish
 welsh;welsh;0;Welsh
 breton;breton;0;Breton
@@ -58,9 +73,9 @@ finnish;finnish;0;Finnish
 lappish;sapmi;0;Sapmi
 ugricbaltic;estonian;0;Estonian
 komi;komi;1;Komi
+samoyed;samoyed;0;Samoyed
 mordvin;mordvin;1;Mordvin
 khanty;khanty;1;Khanty
-samoyed;uralic;0;Uralic
 
 # Baltic
 
@@ -133,11 +148,10 @@ ethiopian;amharic;1;Ethiopian
 somali;somali;0;Somali
 beja;beja;1;Beja
 
+
 # West African
 
-manden;malinke;1;Malinke
-jolof;wolof;1;Jolof
-sosso;mali;0;
+manden;mali;0;Manden
 songhai;songhai;0;Songhai
 
 # Mesoamerican
@@ -172,11 +186,18 @@ mizrahim;mizrahim;1;Mizrahim
 #CK2+ Cultures
 pictish;pictish;1;pictish
 icelandic;icelandic;1;Icelandic
-sicilian_greek;sicilian;0;Sicilian
+sicilian;sicilian;0;
+sicilian_greek;sicilian_greek;1;
+sicilian_arabic;maltese;0;
 cornish;cornish;1;Cornish
 gallawa;gallawa;1;Gallawa
-sicilian_arabic;sicilian;0;Sicilian
-bafour;tuareg;1;Tuareg
+sosso;mali;0;Sosso
+jolof;senegambian;0;Jolof
+bafour;tuareg;0;Bafour
 outremer;outremer;1;Outremer
 latin;c_latin;1;Latin
 assyrian;aramaic;0;Aramaic
+
+
+# Misc
+horse;equine;1;Equine
